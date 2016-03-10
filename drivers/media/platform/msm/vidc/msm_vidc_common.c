@@ -3557,7 +3557,7 @@ int msm_comm_kill_session(struct msm_vidc_inst *inst)
 				msecs_to_jiffies(msm_vidc_hw_rsp_timeout));
 		if (!rc) {
 			dprintk(VIDC_ERR,
-					"%s: Wait interrupted or timed out [%p]: %d\n",
+					"%s: Wait interrupted or timed out [%pK]: %d\n",
 					__func__, inst, abort_completion);
 			msm_comm_generate_sys_error(inst);
 		} else {

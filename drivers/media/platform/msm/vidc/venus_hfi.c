@@ -2149,7 +2149,7 @@ static void venus_hfi_core_clear_interrupt(struct venus_hfi_device *device)
 	int rc = 0;
 
 	if (!device) {
-		dprintk(VIDC_ERR, "%s Invalid paramter: %p\n",
+		dprintk(VIDC_ERR, "%s Invalid paramter: %pK\n",
 			__func__, device);
 		return;
 	}
