@@ -930,8 +930,6 @@ static int cpp_close_node(struct v4l2_subdev *sd, struct v4l2_subdev_fh *fh)
 {
 	uint32_t i;
 	struct cpp_device *cpp_dev = v4l2_get_subdevdata(sd);
-	struct msm_device_queue *processing_q = NULL;
-	struct msm_device_queue *eventData_q = NULL;
 
 	if (!cpp_dev) {
 		pr_err("failed: cpp_dev %pK\n", cpp_dev);
